@@ -4,7 +4,11 @@ const axios = require("axios");
 // const hbs = require("hbs")
 // const { registerPartials } = require("hbs");
 const app = express();
-const port = process.env.port || 8000;
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
 
 //setting the path
 const staticpath = path.join(__dirname, "../public");
