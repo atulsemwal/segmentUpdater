@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Segment Updater</title>
+  </head>
+  <body>
+    <%- include('../partials/navbar.ejs') -%>
+    <!-- {{!-- 57:38 --}} -->
+    <!-- {{!-- hero section starts --}} -->
+    <div class="container-fluid mt-5 px-5 text-center">
+      <div class="row">
+        <div class="px-5 col-mid-10 col-mid-12 mx-auto">
+          <div class="row">
+            <div
+              class="col-md-6 col-12 order-md-0 order-1 d-flex mt-5 pt-5 align-items-start flex-column"
+            >
+              <h1>We Help You Update</h1>
+              <H1>Adobe Analytics Segments</H1>
+              <P>Update Hunderds Of Segments At Once✌️</P>
+              <button
+                class="btn btn-success"
+                onclick="window.location.href='#segmentUpdater'"
+              >
+                Try it
+              </button>
+            </div>
+            <!-- {{!-- right side --}} -->
+            <div class="col-md-6 col-12 hero-text order-md-1 order-0">
+              <figure>
+                <img
+                  src="images/adobe.svg"
+                  class="w-75"
+                  alt="herosection_image"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- {{!-- //about us --}} -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-mid-10 col-mid-12 mx-auto text-center">
+          <h1 class="main-heading text-center">It lets you</h1>
+          <!-- {{!-- Replace dimension --}} -->
+          <div class="row mt-5 func">
+            <div class="mt-5 col-md-6 col-12 order-md-0 order-1">
+              <figure>
+                <img src="images/reg.svg" class="" alt="herosection_image" />
+              </figure>
+            </div>
+            <!-- {{!-- right side --}} -->
+            <div
+              class="col-md-6 col-12 hero-text order-md-1 order-0 d-flex justify-content-center flex-column"
+            >
+              <h1>Replace Any Dimension</h1>
+              <H1>Definition</H1>
+              <P
+                >E.g. Change dimension definition from "Old Page" to "New
+                Page"</P
+              >
+              <button
+                class="btn btn-success"
+                onclick="window.location.href='#segmentUpdater'"
+              >
+                Try it
+              </button>
+            </div>
+          </div>
+
+          <!-- {{!-- Regex dimension --}} -->
+          <div class="row func">
+            <div
+              class="mt-5 col-md-6 col-12 order-md-0 order-1 d-flex justify-content-center flex-column"
+            >
+              <h1>Use Regular Expression</h1>
+              <H1> To Updated Any Definition</H1>
+              <P
+                >E.g. Use regex /old (.*)/ to change "Old Page" to "(New $1)"</P
+              >
+              <button
+                class="btn btn-success"
+                onclick="window.location.href='#segmentUpdater'"
+              >
+                Try it
+              </button>
+            </div>
+            <!-- {{!-- right side --}} -->
+            <div
+              class="mt-5 col-md-6 col-12 hero-text order-md-1 order-0 d-flex justify-content-center flex-column"
+            >
+              <figure>
+                <img
+                  src="images/replace.svg"
+                  class=""
+                  alt="herosection_image"
+                />
+              </figure>
+            </div>
+          </div>
+          <!-- {{!-- add and replace --}} -->
+          <div class="row func">
+            <div
+              class="mt-5 col-md-6 col-12 order-md-0 order-1 d-flex justify-content-center flex-column"
+            >
+              <figure>
+                <img
+                  src="images/add_replace.svg"
+                  class=""
+                  alt="herosection_image"
+                />
+              </figure>
+            </div>
+            <!-- {{!-- right side --}} -->
+            <div
+              class="mt-5 col-md-6 col-12 hero-text order-md-1 order-0 d-flex justify-content-center flex-column"
+            >
+              <h1>Add and Replace</h1>
+              <H1>Any Dimension Definition</H1>
+              <P
+                >E.g. Add changed definition ("New Page") below the old one("Old
+                Page")</P
+              >
+              <button
+                class="btn btn-success"
+                onclick="window.location.href='#segmentUpdater'"
+              >
+                Try it
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- {{!-- about us end --}}
+
+   {{!-- OUR APP --}} -->
+
+    <div class="container-fluid mt-5 px-5" id="segmentUpdater">
+      <div class="row">
+        <div class="col-mid-10 col-mid-12 mx-auto">
+          <h1 class="main-heading text-center">Segment Updater</h1>
+          <p class="text-center">*Please Read <b>Doc </b>Before Updating*</p>
+          <!-- {{!-- from--}} -->
+          <form action="/updater" method="POST" id="'updater">
+            <div class="mb-3">
+              <label for="token" class="form-label">Token</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputToken"
+                aria-describedby="emailHelp"
+                name="token"
+                required
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never save your information
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="companyID" class="form-label">Company ID</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputCompanyID"
+                name="companyID"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="APIKey" class="form-label">API Key</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAPIKey"
+                name="APIKey"
+                required
+              />
+            </div>
+            <h5>Conditions</h5>
+            <div class="mb-3">
+              <label for="func">Func:</label>
+              <select id="func" name="func" required>
+                <option value="replace">Replace</option>
+                <option value="add_and_replace">Add and Replace</option>
+                <option value="regex">Regex</option>
+              </select>
+              <label for="old" class="form-label">Old Value</label>
+              <input type="text" id="inputAPIKey" name="old" required />
+              <label for="new" class="form-label ml-5">New</label>
+              <input type="text" id="inputAPIKey" name="new" required />
+              <label for="dimen_to_update" class="form-label"
+                >Dimension to update</label
+              >
+              <input
+                type="text"
+                id="inputAPIKey"
+                name="dimen_to_update"
+                required
+              />
+            </div>
+            <p>I've set Updated-Limit to 50 latest segment</p>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-5 px-5 text-center">
+      <hr />
+      <footer>
+        <p>Made with ❤️ by Atul</p>
+      </footer>
+    </div>
+
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../jq/bootstrap.js" type="text/javascript"></script>
+  </body>
+</html>
