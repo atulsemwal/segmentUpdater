@@ -1,8 +1,6 @@
 const express = require("express");
 const path = require("path");
 const axios = require("axios");
-// const hbs = require("hbs")
-// const { registerPartials } = require("hbs");
 const app = express();
 let port = process.env.PORT;
 if (port == null || port == "") {
