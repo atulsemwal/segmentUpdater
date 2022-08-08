@@ -13,7 +13,7 @@
       <h3 class="">About</h3>
       <p>
         The Segment Updater website is still in the development phase. Please
-test it first in the Sandbox environment or development environment. I've
+test it first in a sandbox or development environment. I've
 set the segment update limit to 50. If you want to update more segments, please contact me at <b>atulsemwal5@gmail.com</b>
       </p>
       <p>
@@ -42,20 +42,20 @@ set the segment update limit to 50. If you want to update more segments, please 
       <br>
       <h3 class="">Step One</h3>
       <p>
-        To obtain the token, corporate id, and api key, check
+        Obtain token, corporate id, and api key, for more information,
         <a
           href="https://experienceleague.adobe.com/docs/analytics-learn/tutorials/apis/using-postman-to-make-adobe-analytics-2-0-api-requests.html?lang=en"
-          >this Adobe tutorial</a
+          >see the Adobe tutorial</a
         >
        
       </p>
       
       <h3 class="">Step Two</h3>
-      <p>Once you have the above details filled. You can use three function:</p>
+      <p>Once you have filled the above details. You can use one of three functions to update segments:</p>
       <ol>
         <li>
           <b>Replace: </b> It replace the dimension definition. Example, if the
-          Segment definition had a Page Name = "Home page" dimension, you can
+          Segment definition has a Page Name = "Home page" dimension, you can
           change it to Page Name = "Home"
         </li>
         <li>
@@ -65,9 +65,8 @@ set the segment update limit to 50. If you want to update more segments, please 
           Example, <code>"\\|help\\|click\\|\\|\\|(.*)\\|</code>
         </li>
         <li>
-          <b>Add and Replace</b> It will add the replaced dimension definition
-          below the old one. In it, you'll have both the old and new dimension
-          definition.
+          <b>Add and Replace</b> It will place the replaced dimension definition beneath the old one. 
+          It includes both the old and new dimension definitions.
         </li>
       </ol>
       <p>Input to fill further:</p>
@@ -77,8 +76,8 @@ set the segment update limit to 50. If you want to update more segments, please 
         </li>
         <li><b>New:</b> Input new dimension definition</li>
         <li>
-          <b>Dimension to update</b> Input the dimension name that you want to
-          change. Don't use prop or var. If prop15 = Page name, use Page name.
+          <b>Dimension to update</b> Enter the name of the dimension you want to change. 
+          Please, do not use prop or var. If prop15 = Page name, use Page name instead of prop15.
         </li>
       </ol>
       <h3 class="">Step Three</h3>
@@ -93,7 +92,14 @@ set the segment update limit to 50. If you want to update more segments, please 
         <p>Made with ❤️ by Atul</p>
       </footer>
     </div>
-    <script src="../jq/jquery.js" type="text/javascript"></script>
-    <script src="../jq/bootstrap.js" type="text/javascript"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      type="text/javascript"
+    ></script>
   </body>
 </html>
