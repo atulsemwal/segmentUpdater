@@ -1,5 +1,4 @@
-# segmentUpdater
-<h2> Segment Updater </h2>
+# Segment Updater
 
 This is a bulk segment updater for the adobe analytics API 2.0.
 
