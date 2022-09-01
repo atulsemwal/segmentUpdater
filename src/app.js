@@ -61,13 +61,7 @@ app.post("/updater", async (req, res) => {
         new: req.body.new,
         func: req.body.func,
         dimen_to_update: req.body.dimen_to_update,
-      },
-      {
-        old: "test",
-        new: "wow",
-        func: "add_and_replace",
-        dimen_to_update: "Page Name",
-      },
+      }
     ];
     var updated = [];
     /// bulk update SEGMENT with api
