@@ -1,7 +1,7 @@
 # segmentUpdater
 <h2> Segment Updater </h2>
 
-This is a bulk segment for the adobe analytics API 2.0.
+This is a bulk segment updater for the adobe analytics API 2.0.
 
 <h2> Documentation </h2>
 The documentation for this is hosted at www.segmentupdater.com
