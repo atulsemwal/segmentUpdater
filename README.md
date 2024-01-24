@@ -1,9 +1,7 @@
 # Segment Updater
 
-This is a bulk segment updater for the adobe analytics API 2.0.
+This is a bulk updater for Adobe segment using adobe analytics API 2.0.
 
-<h2> Documentation </h2>
-The documentation for this is hosted at www.segmentupdater.com
 
 <h2>Others Sources</h2>
 You can find information about the Adobe Analytics API 2.0 here :
